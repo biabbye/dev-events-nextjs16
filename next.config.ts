@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  experimental:{
-    turbopackFileSystemCacheForDev:true;
-  }
+  reactCompiler: true,
+  experimental: {
+    turbopackFileSystemCacheForDev: true,
+    turbopackUseSystemTlsCerts: true,
+  },
 };
 
 export default nextConfig;
